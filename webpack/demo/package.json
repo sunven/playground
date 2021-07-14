@@ -5,20 +5,42 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "rm -rf ./build && webpack"
+    "dev": "rm -rf ./build && webpack",
+    "dev:server": "rm -rf ./build && webpack server",
+    "mpa": "rm -rf ./build && webpack --config ./mpa.config.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-transform-runtime": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "autoprefixer": "^10.3.1",
+    "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^5.2.6",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "less": "^4.1.1",
     "less-loader": "^10.0.1",
+    "postcss-loader": "^6.1.1",
     "style-loader": "^3.0.0",
     "url-loader": "^4.1.1",
     "webpack": "^5.44.0",
-    "webpack-cli": "^4.7.2"
-  }
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%",
+    "not ie <11"
+  ]
 }

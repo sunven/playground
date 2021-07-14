@@ -16,6 +16,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.container {
+  display: flex;
+}
+
 #logo {
   width: 200px;
   height: 200px;
