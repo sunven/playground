@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <p @click="add">{{count}}</p>
+      <p @click="add">repeat：{{count}}</p>
+      <p v-html="a1"></p>
+      <p v-text="count"></p>
+      <input type="text" v-model="count" />
+    </div>
+    <script src="./src/vue.js"></script>
+    <script>
+      const app = new Vue({
+        el: '#app',
+        data: { count: 0, a1: '<span style="color:red">a1</span>' },
+        methods: {
+          add() {
+            this.count++
+          },
+        },
+      })
+      setInterval(() => {
+        //app.count++
+      }, 2000)
+    </script>
+  </body>
+</html>
