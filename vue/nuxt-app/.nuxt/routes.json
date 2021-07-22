@@ -1,0 +1,46 @@
+[
+  {
+    "name": "admin",
+    "path": "/admin",
+    "component": "/Users/seven/project/playground/vue/nuxt-app/pages/admin.vue",
+    "chunkName": "pages/admin",
+    "_name": "_085ca42e"
+  },
+  {
+    "name": "detail",
+    "path": "/detail",
+    "component": "/Users/seven/project/playground/vue/nuxt-app/pages/detail.vue",
+    "chunkName": "pages/detail",
+    "children": [
+      {
+        "name": "detail-id",
+        "path": ":id?",
+        "component": "/Users/seven/project/playground/vue/nuxt-app/pages/detail/_id.vue",
+        "chunkName": "pages/detail/_id",
+        "_name": "_79f05552"
+      }
+    ],
+    "_name": "_1a3bf327"
+  },
+  {
+    "name": "foo",
+    "path": "/foo",
+    "component": "/Users/seven/project/playground/vue/nuxt-app/pages/foo.vue",
+    "chunkName": "pages/foo",
+    "_name": "_550cc740"
+  },
+  {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/seven/project/playground/vue/nuxt-app/pages/login.vue",
+    "chunkName": "pages/login",
+    "_name": "_d7ec05fa"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/seven/project/playground/vue/nuxt-app/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_6b3b4c28"
+  }
+]
