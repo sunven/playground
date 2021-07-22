@@ -16,6 +16,7 @@ export default {
     HelloWorld,
   },
   asyncData({ store }) {
+    console.log('asyncData', store.state)
     return store.dispatch('getCount')
   },
 }

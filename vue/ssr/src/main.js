@@ -5,15 +5,6 @@ import createStore from './store'
 
 Vue.config.productionTip = false
 
-// 全局混入，beforeMount,服务端不会触发，只会在客户端执行
-
-Vue.mixin({
-  beforeMount() {
-    const { asyncData } = this.$options
-    asyncData && asyncData({ store: this.$store, route: this.$route })
-  },
-})
-
 export function createApp(context) {
   const router = createRouter()
   const store = createStore()

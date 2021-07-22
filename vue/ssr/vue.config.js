@@ -61,5 +61,12 @@ module.exports = {
           optimizeSSR: false,
         })
       })
+
+    // config.plugin('').tap(args => {
+    //   return {}
+    // })
+
+    // 关闭代码压缩
+    config.optimization.minimize(false)
   },
 }
