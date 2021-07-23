@@ -4,4 +4,6 @@ module.exports = {
     //vue中 @ 以外的别名，这里定义
     '^@comps/(.*)$': '<rootDir>/src/components/$1',
   },
+  collectCoverage: true,
+  collectCoverageFrom: ['src/**/*.{js,vue}'],
 }
