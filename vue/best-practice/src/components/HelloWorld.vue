@@ -2,15 +2,17 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <Foo></Foo>
+    <Bar></Bar>
     <svg-icon iconClass="dog"></svg-icon>
   </div>
 </template>
 
 <script>
-import Foo from 'comps/Foo.vue'
+import Foo from '@comps/Foo.vue'
+import Bar from '@/components/Bar.vue'
 console.log(process.env.VUE_APP_BAZ)
 export default {
-  components: { Foo },
+  components: { Foo, Bar },
   name: 'HelloWorld',
   props: {
     msg: String,

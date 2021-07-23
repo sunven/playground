@@ -32,6 +32,30 @@ export const asyncRoutes = [
       icon: 'denglong',
       roles: ['admin', 'editor'],
     },
+    children: [
+      {
+        path: '/foo1',
+        component: () =>
+          import(/* webpackChunkName: "home" */ '@/components/Foo.vue'),
+        name: 'foo1',
+        meta: {
+          title: 'Foo1',
+          icon: 'denglong',
+          roles: ['admin', 'editor'],
+        },
+      },
+      {
+        path: '/foo2',
+        component: () =>
+          import(/* webpackChunkName: "home" */ '@/components/Foo.vue'),
+        name: 'foo2',
+        meta: {
+          title: 'Foo2',
+          icon: 'denglong',
+          roles: ['admin', 'editor'],
+        },
+      },
+    ],
   },
 ]
 
