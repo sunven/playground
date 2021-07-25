@@ -52,7 +52,7 @@ export default function createForm(Cmp) {
       }
     }
     render() {
-      return <Cmp {...this.props} {...this.getForm} />
+      return <Cmp {...this.props} {...this.getForm()} />
     }
   }
 }
