@@ -17,7 +17,7 @@ const Foo = foo(Child)
 export default class HocPage extends Component {
   render() {
     return (
-      <div>
+      <div className="container">
         <h3>Hoc Page</h3>
         <Foo name="msg" />
       </div>

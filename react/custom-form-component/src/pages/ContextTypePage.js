@@ -6,8 +6,10 @@ export default class ContextTypePage extends Component {
   render() {
     const { themeColor } = this.context
     return (
-      <div className="border">
-        <h3 className={themeColor}>ContextTypePage</h3>
+      <div className="">
+        <div className="border">
+          <h3 className={themeColor}>ContextTypePage</h3>
+        </div>
       </div>
     )
   }

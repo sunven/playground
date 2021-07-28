@@ -29,7 +29,7 @@ export default class ContextPage extends Component {
   render() {
     const { theme, user } = this.state
     return (
-      <div>
+      <div className="container">
         <h3>ContextPage</h3>
         <button onClick={this.changeColor}>change color</button>
         <ThemeProvider value={theme}>

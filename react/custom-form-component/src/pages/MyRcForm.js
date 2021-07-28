@@ -31,7 +31,7 @@ class MyRcForm extends Component {
   render() {
     const { getFieldDecorator } = this.props.form
     return (
-      <div>
+      <div className="container">
         <h3>MyRcForm</h3>
         {getFieldDecorator('username', { rules: [nameRules] })(
           <Input placeholder="Username" />

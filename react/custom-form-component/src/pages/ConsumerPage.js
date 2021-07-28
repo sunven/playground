@@ -4,7 +4,7 @@ import { ThemeConsumer, UserConsumer } from '../Context'
 export default class ConsumerPage extends Component {
   render() {
     return (
-      <div>
+      <div className="">
         <ThemeConsumer>
           {context => (
             <div className={context.themeColor}>
