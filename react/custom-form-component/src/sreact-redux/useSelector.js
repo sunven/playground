@@ -14,7 +14,7 @@ export default function useSelector(selector) {
         unsubscribe()
       }
     }
-  }, store)
+  }, [store])
 
   return selector(getState())
 }

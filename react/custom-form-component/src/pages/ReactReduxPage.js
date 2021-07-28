@@ -4,7 +4,7 @@ import { bindActionCreators } from '../sredux'
 
 class ReactReduxPage extends Component {
   render() {
-    console.log('this.props', this.props)
+    // console.log('this.props', this.props)
     const { count1, dispatch, add } = this.props
     return (
       <div className="container">
