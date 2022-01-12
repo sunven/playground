@@ -85,7 +85,10 @@ p {
   width: 16px;
   height: 16px;
   background-color: red;
+  vertical-align: 0.6ex;
   display: inline-block;
+  position: relative;
+  top: 8px;
 }
 .i-line {
   width: 1px;
